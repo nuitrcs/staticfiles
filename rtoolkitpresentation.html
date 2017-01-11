@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="presentation_files/reveal.js-3.3.0/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="presentation_files/reveal.js-3.3.0/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="custom.css"/>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'presentation_files/reveal.js-3.3.0/css/print/pdf.css' : 'presentation_files/reveal.js-3.3.0/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="presentation_files/reveal.js-3.3.0/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="intro-to-r" class="slide level1 white-font" data-background-color="#4E2A84">
+<h1>Intro to R</h1>
+<p><br />
+<br />
+Researcher’s Toolkit<br />
+12 January 2017</p>
+<p>Christina Maimone<br />
+Kelsey Ryland</p>
+</section>
+<section id="workshop-outline" class="slide level1">
+<h1>Workshop Outline</h1>
+<p>Why R<br />
+Options for using R<br />
+RStudio Tour<br />
+R Basics<br />
+Learning More<br />
+</p>
+</section>
+<section id="why-r" class="slide level1" data-background-image="Rlogo.png" data-background-size="300px" data-background-position="50% 80%" data-background-color="#E4E0EE">
+<h1>Why R?</h1>
+<p><br />
+</p>
+</section>
+<section class="slide level1">
+
+<h2 id="its-free">It’s free</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="designed-for-statistical-analysis">Designed for statistical analysis</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="popular-help-is-available">Popular → help is available</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="contributed-packages">Contributed packages</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="customizable-extensible">Customizable, extensible</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="programming-language">Programming language</h2>
+</section>
+<section id="things-to-know" class="slide level1" data-background-color="#E4E0EE">
+<h1>Things to Know</h1>
+</section>
+<section class="slide level1">
+
+<h2 id="r-runs-in-memory">R runs in memory</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="user-contributed-packages-possible-mistakes-bugs-errors">User contributed packages = possible mistakes, bugs, errors</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="r-refers-to-the-language-and-the-environment">“R” refers to the language and the environment</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="there-are-multiple-ways-to-do-most-things">There are multiple ways to do most things…</h2>
+<h2 class="hcenter fragment">
+but some ways are better than others
+</h2>
+</section>
+<section id="ways-to-run-r" class="slide level1" data-background-color="#E4E0EE">
+<h1>Ways to Run R</h1>
+</section>
+<section class="slide level1">
+
+<h2 id="interactively">Interactively</h2>
+<p>R Console</p>
+<p>RStudio</p>
+</section>
+<section class="slide level1">
+
+<h2 id="batch-jobs-rscript">Batch Jobs: Rscript</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="call-from-other-programs">Call from other programs</h2>
+</section>
+<section id="where-to-run-r" class="slide level1" data-background-color="#E4E0EE">
+<h1>Where to Run R</h1>
+</section>
+<section class="slide level1">
+
+<h2 id="on-your-own-computer">On your own computer</h2>
+</section>
+<section class="slide level1">
+
+<h2 id="on-a-remote-server">On a remote server</h2>
+<p>Interactively</p>
+<p>In a web browser</p>
+</section>
+<section class="slide level1">
+
+<h2 id="on-a-computing-cluster">On a computing cluster</h2>
+</section>
+<section id="sharing-analysis-from-r" class="slide level1" data-background-color="#E4E0EE">
+<h1>Sharing Analysis from R</h1>
+<p><em>In addition to the typical analysis workflow, you can also create files for local/offline use or publish them publicly using:</em></p>
+</section>
+<section id="shiny" class="slide level1">
+<h1>Shiny</h1>
+<p>Create web applications</p>
+<p><a href="https://shiny.rstudio.com/" class="uri">https://shiny.rstudio.com/</a></p>
+</section>
+<section id="section" class="slide level1" data-background-image="https://shiny.rstudio.com/images/debugging/kmeans-showcase.gif" data-background-size="contain">
+<h1></h1>
+</section>
+<section id="rmarkdown" class="slide level1">
+<h1>RMarkdown</h1>
+<p>Write presentations (including this one), reports, notebooks</p>
+<p>Can share via RPubs: <a href="http://rpubs.com/" class="uri">http://rpubs.com/</a></p>
+</section>
+<section id="plotly" class="slide level1">
+<h1>Plotly</h1>
+<p>Interactive, well-styled plots</p>
+<p><a href="https://plot.ly/r/" class="uri">https://plot.ly/r/</a></p>
+</section>
+<section id="section-1" class="slide level1" data-background-image="https://cpsievert.github.io/plotly_book/images/gapminder-highlight-animation.gif" data-background-size="contain">
+<h1></h1>
+</section>
+<section id="rstudio-tour" class="slide level1 white-font" data-background-color="#4E2A84">
+<h1>RStudio Tour</h1>
+</section>
+<section id="code" class="slide level1 white-font" data-background-color="#4E2A84">
+<h1>Code</h1>
+</section>
+    </div>
+  </div>
+
+  <script src="presentation_files/reveal.js-3.3.0/lib/js/head.min.js"></script>
+  <script src="presentation_files/reveal.js-3.3.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: '90%',
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
