@@ -16,6 +16,11 @@
   color: #fff;
 }
 
+.white-font a:link {color: #E4E0EE; text-decoration: underline; }
+.white-font a:active {color: #E4E0EE; text-decoration: underline; }
+.white-font a:visited {color: #E4E0EE; text-decoration: underline; }
+.white-font a:hover {color: #E4E0EE; text-decoration: none; }
+
 .reveal li {
   margin-left: 12%;
 }
